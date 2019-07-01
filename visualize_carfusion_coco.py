@@ -11,7 +11,7 @@ dataType='keypoints_train'
 
 # initialize COCO api for person keypoints annotations
 #annFile = '{}/annotations/person_keypoints_{}.json'.format(dataDir,dataType)
-annFile = '{}/annotations/car_{}.json'.format(dataDir,dataType)
+annFile = '{}/annotations/car_{}.json'.format(dataDir,dataType+'2017')
 coco_kps=COCO(annFile)
 
 catIds = coco_kps.getCatIds(catNms=['car']);
