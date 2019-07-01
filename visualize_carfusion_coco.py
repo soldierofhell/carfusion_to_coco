@@ -19,7 +19,7 @@ imgIds = coco_kps.getImgIds(catIds=catIds );
 img = coco_kps.loadImgs(imgIds[np.random.randint(0,len(imgIds))])[0]
 
 print(coco_kps.getCatIds(),img)
-I = io.imread(dataDir+'train/'+img['file_name'])
+I = io.imread(dataDir+'/train2017/'+img['file_name'])
 
 
 # load and display keypoints annotations
