@@ -212,7 +212,7 @@ if __name__ == "__main__":
                 bbox, segmentation, keypoints, num_keypoints = getAnnotation(instance)
                 #print(keypoints)
 
-                if num_keypoints == 0:
+                if num_keypoints == 0 or bbox[2]*bbox[3] == 0:
                     continue
 
                 data["annotations"].append({
